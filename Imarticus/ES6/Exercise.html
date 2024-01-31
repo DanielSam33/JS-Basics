@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <button type="button" onclick="" >Add New Row</button>
+    <table>
+        <thread>
+            <tr>
+                <th>Name</th><th>Age</th><th>Gender</th>
+            </tr>
+        </thread>
+        <tbody id="content">
+            <tr>
+                <td>Kishore</td>
+                <td>22</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>Sakthiman</td>
+                <td>22</td>
+                <td>male</td>
+            </tr>
+        </tbody>
+     </table>
+    <script>
+        let users={"data":[{"name":"Santhosh Kumar",age:26,gender:"male"},
+    {"name":"Daniel",age:22,gender:"male"}]}
+    let innerHTML=""
+    let {data,status}=users
+    //ES-6 for loop
+
+    for(let user of users.data){
+        //the below is the same as object destructon method
+        // let name=user.name
+        // let age=user.age
+        // let gender=user.gender
+        let {name,age}=user
+        
+        //innerHTML=innerHTML+ `<tr>
+        //innerHTML=`${innerHTML}<tr>
+        innerHTML+=`<tr>
+            <td>${user.name}</td><td>${user.age}</td><td>${user.gender}</td>
+            </tr>`
+    }
+    document.getElementById("content").innerHTML=innerHTML
+
+    </script>
+
+</body>
+</html>

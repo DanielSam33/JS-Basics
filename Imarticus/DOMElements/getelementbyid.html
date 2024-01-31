@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onload(){
+            alert(document.getElementById("p").innerHTML)
+            alert(document.getElementsByClassName("mydiv").innerHTML)
+            alert(document.getElementsByTagName("a").innerHTML)
+            document.getElementById("a").style.color="#9DB17C"
+            document.getElementById("p").style.background="#9DB17C".color="#D1F5BE"
+            
+        }
+    </script>
+</head>
+<body onload="onload()">
+    <p id="p">hello world</p>
+    <div class="mydiv">hello div</div>
+    <a href="intro.html" id="a">hello a tag</a>
+    <form name="Loginweb"></form>
+</body>
+</html>

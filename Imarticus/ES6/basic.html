@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a="abc"//ES6 in let we can change the value of the variable
+        const b=34//ES6 im const we cannot change the value of the variable its fixed
+        var c="vcx"//JS
+        let d=a+c
+
+        //JS
+        function add(a,b){
+            let c=a+b
+            return c
+        }
+
+        function sub(a,b){
+            let c=a+b
+            return c;
+        }
+
+        function minus(a,b){
+            let c=a-b
+            return c;
+        }
+
+        function mul(a,b){
+            let c=a*b
+            return c;
+        }
+
+        function div(a,b){
+            let c=a/b
+            return c;
+        }
+
+        console.log("add ="+add(3,2))
+        console.log("sub ="+sub(3,3))
+        console.log("minus="+minus(7,2))
+        console.log("multiplication="+mul(6,6))
+        console.log("Division="+div(10,5))
+
+        let string1="ABCD" //JS
+        let string2='Sam'   //JS
+        let string3=string1+","+string2  //JS
+        let string4=`${string1} + ${string2}`  //ES6-Template Literal (Backtick)
+        let string5=`node`
+        let string6=string1+string2
+        let num1
+        let num2
+        let num3
+         //ES6 arrow function
+        let plus=(num1,num2,num3)=>{
+            let result=num1+num2+num3
+            return result;
+        }
+
+        let subt=(num1,num2,num3)=>{
+            let result=num1-num2-num3
+            return result;
+        }
+
+        let multiplication=(num1,num2,num3)=>{
+            let result=num1*num2*num3
+            return result;
+        }
+
+        let division=(num1,num2)=>{
+            let result=num1/num2
+            return result;
+        }
+
+        let modulus=(num1,num2)=>{
+            let result=num1%num2
+            return result;
+        }
+
+        //ES6 Default Value
+        let default1=(num1,num2=2)=>{
+            let result=num1%num2
+            return result;
+        }
+
+        console.log(string3)
+        console.log(string4)
+        console.log(string2)
+        console.log(string1)
+        console.log(string5)
+        console.log(string6)
+
+        console.log("Plus ="+plus(3,3,2))
+        console.log("Subtraction="+subt(10,1,3))
+        console.log("Multiplication="+multiplication(3,3,3))
+        console.log("Division="+division(10,2))
+        console.log("Modulus="+modulus(11,2))
+        console.log("Default Value of modulus="+default1(300))
+        console.log("Default Value of modulus="+default1(301))
+        console.log("Default Value of modulus="+default1(300,3))
+        console.log("Default Value of modulus="+default1(301,3))
+    </script>
+</body>
+</html>

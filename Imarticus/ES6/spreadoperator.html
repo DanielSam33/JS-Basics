@@ -1,0 +1,61 @@
+<script>
+    const add=(a,b,c)=>{
+        let d=a+b+c
+        return d;
+    }
+
+    const addarr=(a, b)=>{
+        let d=0
+        a.forEach(element => {
+            d=d+element;
+        });
+        return d
+    }
+
+    const addspread=(...a)=>{
+        let d=0
+        a.forEach(element => {
+            d=d+element;
+        });
+        return d
+    }
+
+    const subspread=(...a)=>{
+        let d=0
+        a.forEach(element => {
+            d=d-element;
+        });
+        return d
+    }
+
+    const mulspread=(...a)=>{
+        let d=1
+        a.forEach(element => {
+            d=d*element;
+        });
+        return d
+    }
+
+    const addspreadnew=(...a)=>{
+        let d=0
+        a.forEach(element => {
+            d=parseInt(d)+parseInt(element);
+        });
+        return d
+    }
+
+    console.log("Add Array ="+addarr([12,12,12], [56,89]))
+    console.log("Add ="+add(12,12,12))
+    console.log("Add Spread ="+addspread(1,2,10,23,34,45))
+    console.log("Sub Spread ="+subspread(1,2,10,23,34,45))
+    console.log("Mul Spread ="+mulspread(1,2,10,23,34,45))
+    let a=[1,2,3]
+    let b=[2,3]
+    let c=9
+    let d=[3,2,1]
+    console.log("Add Spread New="+addspreadnew(...a,...b,c,...d))
+    let f=a+b+d
+    console.log("Concad="+f)
+    let g={...a,...b,...d}
+    console.log("Concad="+g)
+</script>
